@@ -3,17 +3,27 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>LM</title>
+    <title>Luke Muther</title>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,500,500i,600,600i,700,700i,900,900i" rel="stylesheet">
 
     <link rel="stylesheet" href="master.css">
-    <!-- Bootstrap CSS only -->
+    <!-- Bootstrap CSS only and Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg mx-2">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="/">Luke Muther</a>
+    <header id="header" class="fixed-top">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="#">Luke Muther</a>
           <button class="navbar-toggler navbar-custom" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -23,29 +33,90 @@
                 <a class="nav-link" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Experience</a>
+                <a class="nav-link" href="#experience">Experience</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Athletics</a>
+                <a class="nav-link" href="#athletics">Athletics</a>
               </li>
             </ul>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
 
-    <div class="hero">
-      <div class="container d-flex align-items-center">
-        <h1>Luke Muther</h1>
-      </div>
-    </div>
+    <section id="hero">
+      <div class="hero">
+        <div class="container d-flex align-items-center">
+          <div class="hero-content">
+            <h1>Luke Muther</h1>
+            <p>Student, Soccer Player, Skier, Software Developer</p>
+            <ul class="list-unstyled hero-social">
+              <li><a href="https://www.linkedin.com/in/lukemuther/", target="_blank"><i class="bi bi-linkedin"></i></a></li>
+              <li><a href="https://github.com/lmuther8", target="_blank"><i class="bi bi-github"></i></a></li>
+              <li><a href="https://www.facebook.com/luke.muther/", target="_blank"><i class="bi bi-facebook"></i></a></li>
+              <li><a href="https://www.instagram.com/lmutes8/", target="_blank"><i class="bi bi-instagram"></i></a></li>
 
-    <div class="container">
-      <h1>next sector</h1>
-    </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="py-5">
+      <div class="container text-center mb-5">
+        <h2>About</h2>
+      </div>
+      <div class="container">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+    </section>
+
+    <section id="experience" class="py-5 bg-gray">
+      <div class="container text-center mb-5">
+        <h2>Experience</h2>
+      </div>
+
+      <div class="container">
+        <div class="row portfolio-container">
+          <div class="col-lg-6 col-md-12 work-item">
+            <h2>Web Developer</h2>
+            <h3>Howser</h3>
+            <h4>Summer 2021</h4>
+            <p>I was the lead website developer for Howser, a Chilean based company, rebuild their website. They were moving away from WordPress and we chose to build a site using Django, a Python Web Framework.</p>
+          </div>
+          <div class="col-lg-6 col-md-12 work-item">
+            <h2>Lead Tutor</h2>
+            <h3>Kenyon College</h3>
+            <h4>February 2018 – May 2020</h4>
+            <p>Work directly with a Calculus 1 section to tutor peers on a drop-in basis at the Math and Science Skills Center.</p>
+          </div>
+          <div class="col-lg-6 col-md-12 work-item">
+            <h2>Landscaper</h2>
+            <h3>Community Landscape Company</h3>
+            <h4>August 2020 – January 2021</h4>
+            <p>Performed a variety of tasks, including weekly yard maintenance and larger projects for clients in the Wolfeboro, NH area.</p>
+          </div>
+          <div class="col-lg-6 col-md-12 work-item">
+            <h2>Busboy</h2>
+            <h3>Garwoods Restaurant and Bar</h3>
+            <h4>Summers 2017 – 2019 </h4>
+            <p>Worked as a dishwasher the summer of 2017 at the same restaurant. Was promoted to busboy in the summer of 2018.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="athletics" class="py-5">
+      <div class="container text-center mb-5">
+        <h2>Athletics</h2>
+      </div>
+      <div class="container">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+    </section>
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
