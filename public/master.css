@@ -1,14 +1,9 @@
-body {
-  height: 100vh;
-  background-image: url("assets/home.JPG");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  background-position: left top;
-  background-attachment: fixed;
+header {
+  background-color: white;
 }
 
 .navbar-brand {
-  color: white;
+  color: black;
   font-size: 3rem !important;
 
 }
@@ -17,10 +12,20 @@ body {
   background-repeat:no-repeat;
 }
 .nav-link {
-  color: white !important;
-  font-size: 1.5rem !important;
+  color: black !important;
+  font-size: 1rem !important;
   padding: 0.5em 1em !important;
 }
 nav.black {
       background: #000;
+}
+
+.hero {
+  background:url("assets/home-bg.jpeg") repeat scroll center center/cover;
+  height: 100vh;
+  width: 100%;
+}
+.hero .container {
+  height: 100%;
+  width: 100%;
 }
