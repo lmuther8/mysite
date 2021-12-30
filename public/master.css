@@ -32,10 +32,18 @@ body {
   background-repeat:no-repeat;
 }
 .nav-link {
+  border-radius: .5rem;
   color: var(--green) !important;
   font-size: 1rem !important;
   font-weight: 500 !important;
   padding: 0.5em 1em !important;
+}
+.nav-item a {
+  transition: .4s;
+}
+.nav-item a:hover, .nav-item a:focus {
+  color: white !important;
+  background-color: var(--green);
 }
 /* End Navbar */
 /* Hero components */
@@ -68,6 +76,40 @@ body {
   padding-right: 1rem;
 }
 /*End hero */
+
+/* About Section */
+.about-text {
+  color: var(--green);
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  text-align: left;
+}
+.about-img-bg {
+  max-width: 350px;
+  padding-bottom: 30px;
+  border: 20px solid var(--green);
+}
+.about-img img {
+  width: 100%;
+  box-shadow: 0px 0px 85px 0px rgba(0, 0, 0, 0.14);
+  margin-top: -60px;
+  margin-left: 40px;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  object-position: center top;
+}
+@media (max-width: 992px) {
+  .about-img-bg {
+    padding-bottom: 0;
+    margin: 0 auto;
+  }
+  .about-img img {
+    margin: 0;
+  }
+}
+/* End About */
+
 /*Experience Components */
 .work-item h3 {
   color: var(--green);
@@ -77,6 +119,171 @@ body {
   font-size: 1rem;
 }
 /* End Experience */
+
+/* Back to top Button */
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: var(--green);
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+  color: white;
+}
+.back-to-top i {
+  font-size: 32px;
+  color: inherit;
+  line-height: 0;
+}
+.back-to-top:hover, .back-to-top:focus {
+  background: white;
+  box-shadow: var(--green) 0 0 0 3px;
+  color: var(--green);
+}
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+/* End Back to Top */
+
+/* Athletics */
+@-webkit-keyframes cf4FadeInOut {
+ 0% {
+   opacity:1;
+ }
+ 17% {
+   opacity:1;
+ }
+ 25% {
+   opacity:0;
+ }
+ 92% {
+   opacity:0;
+ }
+ 100% {
+   opacity:1;
+ }
+}
+
+@-moz-keyframes cf4FadeInOut {
+ 0% {
+   opacity:1;
+ }
+ 17% {
+   opacity:1;
+ }
+ 25% {
+   opacity:0;
+ }
+ 92% {
+   opacity:0;
+ }
+ 100% {
+   opacity:1;
+ }
+}
+
+@-o-keyframes cf4FadeInOut {
+ 0% {
+   opacity:1;
+ }
+ 17% {
+   opacity:1;
+ }
+ 25% {
+   opacity:0;
+ }
+ 92% {
+   opacity:0;
+ }
+ 100% {
+   opacity:1;
+ }
+}
+
+@keyframes cf4FadeInOut {
+ 0% {
+   opacity:1;
+ }
+ 17% {
+   opacity:1;
+ }
+ 25% {
+   opacity:0;
+ }
+ 92% {
+   opacity:0;
+ }
+ 100% {
+   opacity:1;
+ }
+}
+
+#cf4a {
+  position:relative;
+  height:281px;
+  width:450px;
+  margin:0 auto;
+}
+#cf4a img {
+  height: 100%;
+  width: auto;
+  position:absolute;
+  left:0;
+}
+
+#cf4a img {
+  -webkit-animation-name: cf4FadeInOut;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 8s;
+
+  -moz-animation-name: cf4FadeInOut;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-duration: 8s;
+
+  -o-animation-name: cf4FadeInOut;
+  -o-animation-timing-function: ease-in-out;
+  -o-animation-iteration-count: infinite;
+  -o-animation-duration: 8s;
+
+  animation-name: cf4FadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 8s;
+}
+#cf4a img:nth-of-type(1) {
+  -webkit-animation-delay: 6s;
+  -moz-animation-delay: 6s;
+  -o-animation-delay: 6s;
+  animation-delay: 6s;
+}
+#cf4a img:nth-of-type(2) {
+  -webkit-animation-delay: 4s;
+  -moz-animation-delay: 4s;
+  -o-animation-delay: 4s;
+  animation-delay: 4s;
+}
+#cf4a img:nth-of-type(3) {
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  -o-animation-delay: 2s;
+  animation-delay: 2s;
+}
+#cf4a img:nth-of-type(4) {
+  -webkit-animation-delay: 0;
+  -moz-animation-delay: 0;
+  -o-animation-delay: 0;
+  animation-delay: 0;
+}
+/* End Athletics */
+
 
 /* Random Stuff */
 .bg-gray {
