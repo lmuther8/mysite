@@ -1,12 +1,16 @@
 :root {
   --green: #606c38;
   --gray: #F0F0F0;
+  --light-green: #D1DDA2;
+}
+
+section {
+  scroll-margin-top: 86px;
 }
 
 body {
   font-family: "Poppins" !important;
 }
-
 
 /* Navbar Components */
 #header {
@@ -152,138 +156,92 @@ body {
 /* End Back to Top */
 
 /* Athletics */
-@-webkit-keyframes cf4FadeInOut {
- 0% {
-   opacity:1;
- }
- 17% {
-   opacity:1;
- }
- 25% {
-   opacity:0;
- }
- 92% {
-   opacity:0;
- }
- 100% {
-   opacity:1;
- }
-}
 
-@-moz-keyframes cf4FadeInOut {
- 0% {
-   opacity:1;
- }
- 17% {
-   opacity:1;
- }
- 25% {
-   opacity:0;
- }
- 92% {
-   opacity:0;
- }
- 100% {
-   opacity:1;
- }
-}
-
-@-o-keyframes cf4FadeInOut {
- 0% {
-   opacity:1;
- }
- 17% {
-   opacity:1;
- }
- 25% {
-   opacity:0;
- }
- 92% {
-   opacity:0;
- }
- 100% {
-   opacity:1;
- }
-}
-
-@keyframes cf4FadeInOut {
- 0% {
-   opacity:1;
- }
- 17% {
-   opacity:1;
- }
- 25% {
-   opacity:0;
- }
- 92% {
-   opacity:0;
- }
- 100% {
-   opacity:1;
- }
-}
-
-#cf4a {
-  position:relative;
-  height:281px;
-  width:450px;
-  margin:0 auto;
-}
-#cf4a img {
-  height: 100%;
-  width: auto;
-  position:absolute;
-  left:0;
-}
-
-#cf4a img {
-  -webkit-animation-name: cf4FadeInOut;
-  -webkit-animation-timing-function: ease-in-out;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-duration: 8s;
-
-  -moz-animation-name: cf4FadeInOut;
-  -moz-animation-timing-function: ease-in-out;
-  -moz-animation-iteration-count: infinite;
-  -moz-animation-duration: 8s;
-
-  -o-animation-name: cf4FadeInOut;
-  -o-animation-timing-function: ease-in-out;
-  -o-animation-iteration-count: infinite;
-  -o-animation-duration: 8s;
-
-  animation-name: cf4FadeInOut;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-duration: 8s;
-}
-#cf4a img:nth-of-type(1) {
-  -webkit-animation-delay: 6s;
-  -moz-animation-delay: 6s;
-  -o-animation-delay: 6s;
-  animation-delay: 6s;
-}
-#cf4a img:nth-of-type(2) {
-  -webkit-animation-delay: 4s;
-  -moz-animation-delay: 4s;
-  -o-animation-delay: 4s;
-  animation-delay: 4s;
-}
-#cf4a img:nth-of-type(3) {
-  -webkit-animation-delay: 2s;
-  -moz-animation-delay: 2s;
-  -o-animation-delay: 2s;
-  animation-delay: 2s;
-}
-#cf4a img:nth-of-type(4) {
-  -webkit-animation-delay: 0;
-  -moz-animation-delay: 0;
-  -o-animation-delay: 0;
-  animation-delay: 0;
-}
 /* End Athletics */
 
+/* Contact */
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: white;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: white;
+}
+
+.contact input, .contact textarea {
+  width: 100%;
+  margin-bottom: 5px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 0;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  height: 50px;
+  letter-spacing: 0.1em;
+  padding-left: 10px;
+  margin: 0 0 25px 0;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.contact textarea {
+  padding-top: 10px;
+  min-height: 160px;
+}
+.contact {
+  background-color: var(--green);
+  color: white;
+}
+
+.contact input:focus, .contact textarea:focus {
+  box-shadow: none;
+  outline: 0 none;
+}
+.contact-btn {
+  width: 80%;
+  padding: .5em 0;
+  font-size: 1.5rem;
+  color: var(--green);
+  background-color: white;
+  border: none;
+  transition: all .4s ease
+}
+.contact-btn:hover, .contact-btn:focus {
+  background-color: var(--light-green);
+}
+/* End Contact */
+
+/* footer */
+footer {
+  background-color: var(--green);
+}
+.footer-social {
+  justify-content: center;
+}
+.footer-social a {
+  color: white;
+}
+.footer-social i {
+  font-size: 2rem;
+  color: inherit;
+  padding: 0 .5rem;
+  transition: all .4s ease;
+}
+.footer-social i:hover {
+  color: var(--light-green);
+}
+.footer-social a:focus {
+  box-shadow: none;
+  outline: 0 none;
+  color: var(--light-green)
+}
+/* end footer */
 
 /* Random Stuff */
 .bg-gray {
