@@ -2,6 +2,10 @@
   --green: #606c38;
   --gray: #F0F0F0;
   --light-green: #D1DDA2;
+  --purple: #482e92;
+  --light-purple: #E0B7FF;
+  --brooks-green: #016550;
+  --light-brooks-green: #90E3C9;
 }
 
 section {
@@ -156,7 +160,27 @@ body {
 /* End Back to Top */
 
 /* Athletics */
-
+.athletics ul {
+  list-style: none;
+}
+.athletics li {
+  font-weight: 300;
+}
+.athletics h2 {
+  font-weight: 600;
+}
+.kenyon h2 {
+  color: var(--purple);
+}
+.kenyon h4 {
+  color: var(--light-purple);
+}
+.brooks h2 {
+  color: var(--brooks-green);
+}
+.brooks h4 {
+  color: var(--light-brooks-green);
+}
 /* End Athletics */
 
 /* Contact */
@@ -164,15 +188,12 @@ body {
   color: white;
   opacity: 1; /* Firefox */
 }
-
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
   color: white;
 }
-
 ::-ms-input-placeholder { /* Microsoft Edge */
   color: white;
 }
-
 .contact input, .contact textarea {
   width: 100%;
   margin-bottom: 5px;
@@ -189,7 +210,6 @@ body {
   line-height: 14px;
   text-transform: uppercase;
 }
-
 .contact textarea {
   padding-top: 10px;
   min-height: 160px;
@@ -215,8 +235,19 @@ body {
 .contact-btn:hover, .contact-btn:focus {
   background-color: var(--light-green);
 }
+#success {
+  display: none;
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+}
+#failure {
+  display: none;
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+}
 /* End Contact */
-
 /* footer */
 footer {
   background-color: var(--green);

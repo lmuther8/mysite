@@ -1,5 +1,6 @@
 const express = require('express')
 const app = express()
+const mail = require('./mail.js')
 const port = process.env.PORT || 3000
 
 app.use(express.static('public'));
@@ -10,7 +11,8 @@ app.get('/', (req, res) => {
 })
 
 app.post('/mail', (req, res) => {
-  console.log('Data:', req.body);
+  const { name, subj, email, message } = req.body;
+  mail.sendMail(name, subj, email, message)
   res.json({message: 'Message received!'})
 })
 

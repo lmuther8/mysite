@@ -37,6 +37,16 @@ emailForm.addEventListener('submit', (e) => {
     headers: {'Content-Type': 'application/json'},
     body: JSON.stringify(data)
   }).then(res => {
-    console.log("Request complete! response:", res);
+    if (res.status == 200) {emailSuccess()}
+    else {emailFail()}
   });
 });
+
+function emailSuccess() {
+  emailForm.style.display = "none"
+  document.getElementById('success').style.display = "flex"
+};
+function emailFail() {
+  emailForm.style.display = "none"
+  document.getElementById('failure').style.display = "flex"
+};
