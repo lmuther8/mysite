@@ -116,6 +116,14 @@ body {
     margin: 0;
   }
 }
+.skills i {
+  font-size: 3rem;
+  padding-right: 1em;
+  color: var(--green); 
+}
+.skills p {
+  padding-right: 1em;
+}
 /* End About */
 
 /*Experience Components */
@@ -142,6 +150,7 @@ body {
   border-radius: 4px;
   transition: all 0.4s;
   color: white;
+  text-decoration: none;
 }
 .back-to-top i {
   font-size: 32px;
