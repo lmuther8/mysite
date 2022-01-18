@@ -75,13 +75,26 @@ body {
   font-size: 3.5rem;
   font-weight: 600;
 }
+.hero-content p {
+  font-size: 1.2rem;
+}
 .hero-social {
   display: flex;
 }
-.hero-social i {
-  font-size: 1rem;
+.hero-social a {
   color: white;
-  padding-right: 1rem;
+  margin-right: 1rem;
+}
+.hero-social i {
+  font-size: 1.5rem;
+  color: inherit;
+  transition: all .5s ease;
+}
+.hero-social i:hover {
+  color: var(--light-green);
+}
+.hero-social a:focus {
+  color: var(--light-green);
 }
 /*End hero */
 
@@ -98,7 +111,7 @@ body {
   border: 20px solid var(--green);
 }
 .about-img img {
-  width: 100%;
+  width: 312px;
   box-shadow: 0px 0px 85px 0px rgba(0, 0, 0, 0.14);
   margin-top: -60px;
   margin-left: 40px;
@@ -115,11 +128,16 @@ body {
   .about-img img {
     margin: 0;
   }
+  .skills {
+    flex-wrap: wrap;
+  }
+}
+.skills li {
+  width: 33%;
 }
 .skills i {
   font-size: 3rem;
-  padding-right: 1em;
-  color: var(--green); 
+  color: var(--green);
 }
 .skills p {
   padding-right: 1em;
