@@ -16,6 +16,10 @@ app.post('/mail', (req, res) => {
   res.json({message: 'Message received!'})
 })
 
+app.get('/resume', (req, res) => {
+  res.sendFile(__dirname + "/public/resume/" + "LukeMutherResume.pdf");
+})
+
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })

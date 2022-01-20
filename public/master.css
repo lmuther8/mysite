@@ -145,6 +145,21 @@ body {
 /* End About */
 
 /*Experience Components */
+#experience button {
+  padding: .25em .5em;
+  border-radius: .5rem;
+  border: 2px solid var(--green);
+  font-size: 1.25rem;
+  color: var(--green);
+  transition: all .5s ease;
+}
+#experience button:hover, #experience button:focus {
+  background-color: var(--green);
+  color: white;
+}
+#experience i {
+  padding-right: .5rem;
+}
 .work-item h3 {
   color: var(--green);
   margin-bottom: 0;
