@@ -7,11 +7,11 @@ app.use(express.static('public'));
 app.use(express.json());
 
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + "/public/home.html");
+  res.sendFile(__dirname + "/public/" + "home.html");
 })
 
 app.get('/fundraisers', (req, res) => {
-  res.sendFile(__dirname + "/public/fundraisers.html")
+  res.sendFile(__dirname + "/public/" + "fundraisers.html")
 })
 
 app.post('/mail', (req, res) => {
