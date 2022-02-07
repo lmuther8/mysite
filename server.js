@@ -14,6 +14,10 @@ app.get('/fundraisers', (req, res) => {
   res.sendFile(__dirname + "/public/" + "fundraisers.html")
 })
 
+app.get('/stripes', (req, res) => {
+  res.sendFile(__dirname + "/public/" + "stripes.html")
+})
+
 app.post('/mail', (req, res) => {
   const { name, subj, email, message } = req.body;
   mail.sendMail(name, subj, email, message)
