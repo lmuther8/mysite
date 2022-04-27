@@ -167,6 +167,15 @@ body {
 .work-item h4 {
   font-size: 1rem;
 }
+.work-item a {
+  color: var(--green);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all .3s;
+}
+.work-item a:hover {
+  color: var(--light-green)
+}
 /* End Experience */
 
 /* Back to top Button */
